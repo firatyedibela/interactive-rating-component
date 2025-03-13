@@ -19,8 +19,8 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 ### Links
 
-- Solution URL: [GitHub Repository](https://github.com/firatyedibela/frontend-quiz-app?tab=readme-ov-file)
-- Live Site URL: [Live Site](https://vercel.com/firatyedibelas-projects/frontend-quiz-app)
+- Solution URL: [GitHub Repository](https://github.com/firatyedibela/interactive-rating-component)
+- Live Site URL: [Live Site](https://interactive-rating-component-roan-sigma.vercel.app)
 
 ## My process
 
