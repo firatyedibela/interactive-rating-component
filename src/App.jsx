@@ -1,5 +1,12 @@
+import { useState } from 'react';
+import RatingCard from './components/RatingCard';
+
 function App() {
-  return <h1>Hello world, rating component is coming!</h1>;
+  return (
+    <main className="main">
+      <RatingCard />
+    </main>
+  );
 }
 
 export default App;

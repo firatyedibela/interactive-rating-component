@@ -1,0 +1,45 @@
+@use '../abstracts/variables' as *;
+
+.rating {
+  &__input-label {
+    width: 42px;
+    height: 42px;
+    border-radius: 100px;
+    border: none;
+    background-color: $dark-blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    font-size: 14px;
+    font-weight: bold;
+    color: $light-grey;
+
+    transition: all 150ms;
+
+    input {
+      appearance: none;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .rating__input-label {
+    width: 51px;
+    height: 51px;
+
+    font-size: 16px;
+    letter-spacing: 0.2px;
+  }
+
+  .rating__input-label:has(input:checked) {
+    background-color: white;
+    color: $dark-blue;
+  }
+
+  .rating__input-label:hover {
+    background-color: $orange;
+    color: $dark-blue;
+  }
+}

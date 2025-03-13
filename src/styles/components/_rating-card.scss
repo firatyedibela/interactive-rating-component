@@ -1,0 +1,163 @@
+@use '../abstracts/variables' as *;
+
+.rating {
+  max-width: 327px;
+  padding: 24px 24px 32px 24px;
+  border-radius: 15px;
+  background: rgb(35, 42, 52);
+  background: radial-gradient(
+    circle at 50% 20%,
+    rgba(35, 42, 52, 1) 0%,
+    rgba(24, 30, 39, 1) 100%
+  );
+
+  &__icon-container {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: $dark-blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+
+  &__icon {
+    width: 14px;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: auto;
+    color: white;
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 22px;
+    color: $light-grey;
+    margin-bottom: 24px;
+  }
+
+  &__fieldset {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  &__submit-btn {
+    width: 100%;
+    height: 45px;
+    border-radius: 22.5px;
+    border: none;
+    background-color: $orange;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: auto;
+    letter-spacing: 1.87px;
+    text-transform: uppercase;
+
+    transition: all 150ms;
+  }
+}
+
+.rating-thanks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 360px;
+  gap: 24px;
+
+  .thank-you-logo {
+    width: 144px;
+  }
+
+  .selected-rating {
+    background-color: $dark-blue;
+    color: $orange;
+    border-radius: 22.5px;
+    font-size: 14px;
+    height: 32px;
+    width: 168px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .thank-you-title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: auto;
+    color: white;
+    margin-bottom: -7px;
+  }
+
+  .thank-you-text {
+    font-size: 14px;
+    color: $light-grey;
+    text-align: center;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: 768px) {
+  .rating {
+    max-width: 412px;
+    height: 416px;
+    padding: 32px 39px 32px 32px;
+
+    &__icon-container {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 30px;
+    }
+
+    &__icon {
+      width: 16.75px;
+    }
+
+    &__title {
+      font-size: 28px;
+    }
+
+    &__text {
+      font-size: 15px;
+      line-height: 24px;
+    }
+
+    &__fieldset {
+      margin-bottom: 32px;
+    }
+  }
+
+  .rating__submit-btn:hover {
+    background-color: white;
+  }
+
+  .rating-thanks {
+    gap: 32px;
+
+    .thank-you-logo {
+      width: 162px;
+    }
+
+    .selected-rating {
+      font-size: 15px;
+      width: 192px;
+    }
+
+    .thank-you-title {
+      font-size: 28px;
+      margin-bottom: -25px;
+    }
+
+    .thank-you-text {
+      font-size: 15px;
+      line-height: 24px;
+    }
+  }
+}
